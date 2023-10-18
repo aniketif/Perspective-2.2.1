@@ -107,7 +107,6 @@
         "test_python": "node scripts/test_python.js",
         "clean": "node scripts/clean.js",
         "start": "npm run start --workspace",
-        "prepush": "npm-run-all lint_js lint_python",
         "prepare": "husky install",
         "lint_js": "npm run lint:js",
         "lint:js": "prettier --check \"examples/**/*.js\" \"examples/**/*.tsx\" \"scripts/*.js\" \"rust/**/*.ts\" \"rust/**/*.js\" \"packages/**/*.js\" \"packages/**/*.ts\" \"cpp/**/*.js\"",
