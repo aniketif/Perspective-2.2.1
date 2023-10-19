@@ -91,7 +91,7 @@ export class DataAccessor {
         switch (get_column_type(type.value)) {
             case "float":
             case "integer": {
-                val = Number(val);
+                val = isNaN(val) ? val : Number(val);
                 break;
             }
             case "boolean": {
@@ -177,9 +177,13 @@ export class DataAccessor {
  * @param {*} value
  */
 export function clean_data(value) {
-    if (value === null || value === "null") {
+    if (value === null
+        // || value === "null"
+    ) {
         return null;
-    } else if (value === undefined || value === "undefined") {
+    } else if (value === undefined
+        // || value === "undefined"
+    ) {
         return undefined;
     } else {
         return value;
