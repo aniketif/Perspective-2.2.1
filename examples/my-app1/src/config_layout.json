@@ -1,0 +1,40 @@
+{
+    "sizes": [
+        1
+    ],
+    "detail": {
+        "main": {
+            "type": "tab-area",
+            "widgets": [
+                "PERSPECTIVE_GENERATED_ID_1"
+            ],
+            "currentIndex": 0
+        }
+    },
+    "mode": "globalFilters",
+    "viewers": {
+        "PERSPECTIVE_GENERATED_ID_1": {
+            "plugin": "Datagrid",
+            "plugin_config": {
+
+            },
+            "settings": false,
+            "theme": null,
+            "title": null,
+            "group_by": [],
+            "split_by": [],
+            "columns": [
+
+            ],
+            "filter": [],
+            "sort": [
+
+            ],
+            "expressions": [],
+            "aggregates": {},
+            "master": false,
+            "table": "superstore",
+            "linked": false
+        }
+    }
+}
